@@ -8,10 +8,13 @@ public class SentInfo {
 	
 	private String requestType;
 	
-	public SentInfo(String name, String time, String requestType) {
+	private String username;
+	
+	public SentInfo(String name, String time, String requestType, String username) {
 		this.name=name;
 		this.time=time;
 		this.requestType=requestType;
+		this.username=username;
 	}
 	
 	public SentInfo() {
@@ -40,6 +43,14 @@ public class SentInfo {
 
 	public void setRequestType(String requestType) {
 		this.requestType = requestType;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 }
