@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: skyre-consumer
+  labels:
+    app: skyre-consumer
+spec:
+  containers:
+    - name: skyre-consumer
+      image: eyjafjalla/skyre-consumer:latest
+      ports:
+      - containerPort: 9002
